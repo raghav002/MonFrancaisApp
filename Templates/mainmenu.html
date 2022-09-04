@@ -1,0 +1,89 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Main Menu</title>
+<style>
+    h1 {
+        height: 70px;
+        text-align: center;
+        padding: 9px;
+        border-radius: 12px;
+    }
+    h2 {
+        border-radius: 12px;
+        width: 250px;
+        height: 45px;
+        text-align: center;
+    }
+</style>
+{% endblock %}
+
+{% block body %}
+<style>
+    .container{
+    height: 50px;
+    position: relative;
+    }
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>
+<br>
+<h1>Main Menu</h1>
+<hr>
+<br>
+<div class="container">
+    <h2 class="center">Translate</h2>
+</div>
+<br>
+<div class="container">
+    <button class="btn center" type="button" onclick="window.location.href='/translation'">Go to Translator</button>    
+</div>
+<br>
+
+<div class="container">
+    <h2 class="center">Vocabulary</h2>
+</div>
+<br>
+<div class="container">
+    <button class="btn center" type="button" onclick="window.location.href='/vocabmenu'">Go to Vocabulary</button>    
+</div>
+<br>
+
+<div class="container">
+    <h2 class="center">Wordmatch</h2>
+</div>
+<br>
+<div class="container">
+    <button class="btn center" type="button" onclick="window.location.href='/wordmatch'">Go to Wordmatch</button>    
+</div>
+<br>
+
+<div class="container">
+    <h2 class="center">Picture Guess</h2>
+</div>
+<br>
+<div class="container">
+    <button class="btn center" type="button" onclick="window.location.href='/picguess'">Go to Picture Guess</button>    
+</div>
+<br>
+
+<div class="container">
+    <h2 class="center">Books</h2>
+</div>
+<br>
+<div class="container">
+    <button class="btn center" type="button" onclick="window.location.href='/booksmenu'">Go to Books</button>    
+</div>
+<br>
+<br>
+
+<hr>
+<button class="btn" type="button" onclick="window.location.href='/logout'">Logout</button>    
+<hr>
+{% endblock %}

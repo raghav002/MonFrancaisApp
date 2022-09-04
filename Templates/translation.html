@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Translation</title>
+{% endblock %}
+
+{% block body %}
+<br>
+<h1 style="text-align: center;">Text Translation</h1>
+<hr>
+    <form action="/translation" method="POST">
+        <br>
+        <label for="etext">English Text:</label>
+        <br>
+        <textarea class="form-control" name="etext" id="etext" rows="3" placeholder = "Enter text">{{value1}}</textarea> 
+        <br>
+        <label for="ttext">French Text:</label>
+        <br>
+        <textarea class="form-control" name="ttext" id="ttext" rows="3" placeholder = "Translation">{{value}}</textarea> 
+        <br>
+        <input type="submit" value="Translate"> 
+    </form>
+<br>
+<button type="button" class="btn loginbtn" onclick="window.location.href='/mainmenu'">Back to Main Menu</button>
+{% endblock %}

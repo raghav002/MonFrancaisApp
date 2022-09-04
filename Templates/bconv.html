@@ -1,0 +1,115 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Basic Conversation</title>
+<link href="static/css/basicconv.css" rel="stylesheet">
+
+{% endblock %}
+
+{% block body %}
+<div>
+    <br>
+    <h1 style="text-align: center">Basic Conversation</h1>
+    <hr>
+    <div>
+        <h3 style="text-align: center;">Greetings</h3>
+        <hr>
+        <br>
+        <div>
+            <label for="bonjourpronounciation" style='display:inline'>Bonjour! = Hello! / Good morning!</label>
+            <button style='float:right; display: inline;' class="btn" onclick="window.location.href='/bconv/bonjour'">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>Bonsoir! = Good evening!</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>Salut! = Hi! (Informal, for friends)</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+    </div>
+    <div>
+        <hr>
+        <h3 style="text-align:center;">Partings</h3>
+        <hr>
+        <br>
+        <div>
+            <label style='display:inline'>À bientôt! = Goodbye!</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>Au revoir! = See you!</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>Bonne nuit! = Good night!</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+    </div>
+    <div>
+        <hr>
+        <h3 style="text-align: center;">Introductions</h3>
+        <hr>
+        <br>
+        <div style="clear: both;">
+            <label style='display:inline'>Comment vous-appelez vous? = What is your name? (Formal)</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div style="clear: both;">
+            <label style='display:inline'>Comment t'appelles-tu? = What is your name? (Informal)</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div style="clear: both;">
+            <label style='display:inline'>Je m'appelle Jeff = My name is Jeff</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div style="clear: both;">
+            <label style='display:inline'>Enchantée! = Nice to meet you!</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div style="clear: both;">
+            <label style='display:inline'>Comment ça va? = How are you?</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>Ça va! Et toi? = I'm fine! And you? (Informal)</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>Ça va! Et vous? = I'm fine! And you? (Formal)</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>D'où viens-tu? = Where are you from? (Informal)</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>D'où venez-vous? = Where are you from? (Formal)</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>Je viens d'Inde = I'm from India</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <hr>
+        <button type="button" class="btn loginbtn" onclick="window.location.href='/vocabmenu'">Back to Vocab Menu</button>
+        <hr>
+    </div>
+</div>
+{% endblock %}

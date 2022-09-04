@@ -1,0 +1,72 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Login Page</title>
+<link href="static/css/loginpg.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<style>
+    .container {
+        position: relative;
+    }
+
+    .center {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>
+<br>
+<h1>Log into your account</h1>
+<hr>
+<br>
+<div class="grid-container">
+    <div class="grid-item center detailsdiv">
+        <form action="/login" method="POST">
+            <div>
+                <label for="useremail">Enter your email address:</label>
+                <br>
+                <br>
+                <input class="form-control entrybox" type="text" name="useremail" id="useremail"
+                    placeholder="Enter email address">
+            </div>
+            <br>
+            <div>
+                <label for="username">Enter your username:</label>
+                <br>
+                <br>
+                <input class="form-control entrybox" type="text" name="username" id="username"
+                    placeholder="Enter username">
+            </div>
+            <br>
+            <div>
+                <label for="password">Enter your password:</label>
+                <br>
+                <br>
+                <input class="form-control entrybox" type="password" name="password" id="password"
+                    placeholder="Enter password " aria-label="Enter password ">
+            </div>
+            <br>
+            <br>
+            <div>
+                <input type="submit" class="btn submitbtn" value="Login">
+            </div>
+            <br>
+            <div>
+                <button type="button" class="btn backbtn" onclick="window.location.href='/'">Back to
+                    Home</button>
+            </div>
+        </form>
+    </div>
+    <div class="grid-item center imagediv">
+        <img class="loginpic"
+            src="https://images.pexels.com/photos/2272939/pexels-photo-2272939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    </div>
+</div>
+<br>
+<hr>
+{% endblock %}

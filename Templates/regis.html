@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Registration</title>
+<link href="static/css/regispg.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+<style>
+    .container {
+        position: relative;
+    }
+
+    .center {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>
+<br>
+<h1>Create your account</h1>
+<hr>
+<div class="grid-container">
+    <div class="grid-item center regisform">
+        <form action="/regis" method="POST">
+            <br>
+            <div>
+                <label for="useremail">Enter your email address:</label>
+                <br>
+                <br>
+                <input placeholder="Enter your email" class="form-control" type="text" name="useremail" id="useremail">
+            </div>
+            <br>
+            <div>
+                <label for="username">Enter your username:</label>
+                <br>
+                <br>
+                <input placeholder="Enter a username" class="form-control" type="text" name="username" id="username">
+            </div>
+            <br>
+            <div>
+                <label for="password">Enter your password:</label>
+                <br>
+                <br>
+                <input placeholder= "Enter a password" class="form-control" type="password" name="password" id="password">
+            </div>
+            <br>
+            <div>
+                <input type="submit" value="Register">
+            </div>
+            <br>
+            <div>
+                <button class="btn" type="button" onclick="window.location.href='/'">Back to Home</button>
+            </div>
+        </form>
+    </div>
+    <div class="grid-item center imagediv">
+        <br>
+        <img class="loginpic"
+            src="https://images.pexels.com/photos/2272939/pexels-photo-2272939.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+    </div>
+</div>
+<br>
+<br>
+<hr>
+{% endblock %}

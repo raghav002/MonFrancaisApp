@@ -1,0 +1,95 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Picture Guess</title>
+<link rel = "stylesheet" href="/static/styleg.css">
+{% endblock %}
+
+{% block body %}
+<br>
+<h1 style="text-align:center">Picture Guess</h1>
+<hr>
+    <div id = 'start page'>
+        <label style="font-size: 24px; font-weight: 200px">
+            You will be given 4 pictures, which all share a common theme. You need to find the four letter
+            word these pictures show, and enter the letters in french inside the given spaces, a letter for 
+            each box. Get as many right as you can! Best of luck!
+        </label>
+        <br>
+        <br>
+        <button id = 'startbtn'>Start Picture Guess</button>
+    </div>
+    <div id = 'question page'>
+        <div id='qaarea'>
+            <div id='top two pics'>
+                <img width='150' height='150' id='pic1'>
+                <img width='150' height='150' id='pic2'>
+            </div>
+            <div id='bottom two pics'>
+                <img width='150' height='150' id='pic3'>
+                <img width='150' height='150' id='pic4'>
+            </div>
+            <br>
+            <div id='answer boxes'>
+                <input id='L1' aria-required="true" style='width: 30px;' type='text' maxlength="1">
+                <input id='L2' aria-required="true" style='width: 30px;' type='text' maxlength="1">
+                <input id='L3' aria-required="true" style='width: 30px;' type='text' maxlength="1">
+                <input id='L4' aria-required="true" style='width: 30px;' type='text' maxlength="1">
+            </div>
+            <br>
+            <div id='submitbutton'>
+                <button id='ansbtn'>Submit</button>
+            </div>
+            <div>
+                <button id='nextq'>Next Question</button>
+            </div>
+        </div>
+    
+        <div id="accentref">
+            <div>
+                <label>L'accent aigu -</label>
+                <label>é</label>
+            </div>
+            <div>
+                <label>L'accent grave -</label>
+                <label>à</label>
+                <label>è</label>
+                <label>ù</label>
+            </div>
+            <div>
+                <label>L'accent circonflexe -</label>
+                <label>â</label>
+                <label>ê</label>
+                <label>î</label>
+                <label>ô</label>
+                <label>û</label>
+            </div>
+            <div>
+                <label>La cédille -</label>
+                <label>ç</label>
+            </div>
+            <div>
+                <label>Le tréma -</label>
+                <label>ë</label>
+                <label>ï</label>
+                <label>ü</label>
+            </div>
+        </div>
+    </div>
+    <div id = 'score page'>
+        <div>
+            <h1 style="text-align:center;">Your score:</h1>
+        </div>
+        <div>
+            <h2 style="text-align:center;" id = 'finalscore'>Score</h2>
+        </div>
+        <div>
+            <h3 style="text-align:center;" id = 'compmsg'>Text</h3>
+        </div>
+    </div>
+    <script src="..\static\picg.mjs"></script>
+<hr>
+<div>
+    <button type="button" class="btn loginbtn" onclick="window.location.href='/mainmenu'">Back to Main Menu</button>
+</div>
+{% endblock %}

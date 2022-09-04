@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Mon Francais</title>
+<link href="static/css/homepg.css" rel="stylesheet">
+{% endblock %}
+
+{% block body %}
+
+<div class="grid-container">
+    <div class= "grid-item imgsec1">
+        <img
+            src="https://images.unsplash.com/photo-1565881606991-789a8dff9dbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80">
+    </div>
+    <div class="grid-item introsec">
+        <p class="headtext">Mon Francais</p>
+        <p class="introtext">This is where your learning journey begins</p>
+        <br>
+        <br>
+        <br>
+        <button type="button" class="btn regisbtn" onclick="window.location.href='/regis'">Register</button>        
+        <br>
+        <br>
+        <button type="button" class="btn loginbtn" onclick="window.location.href='/login'">Login</button>
+    </div>
+    <div class= "grid-item imgsec2">
+        <img
+            src="https://images.unsplash.com/photo-1564609116494-380be7238d7d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=387&q=80">
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Mon Francais</title>
+{% endblock %}
+
+{% block body %}
+<style>
+    .container {
+        height: 50px;
+        position: relative;
+    }
+
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>
+<br>
+<h1 style="text-align: center;">Books Menu</h1>
+<hr>
+<br>
+<div class="container">
+    <button type="button" class="btn center"
+        onclick="window.open('https://www.profartspla.info/images/tintin.pdf', '_blank')">Book 1 - Adventures of
+        Tintin</button>
+</div>
+<br>
+<div class="container">
+    <button type="button" class="btn center">Go to Book 3</button>
+</div>
+<br>
+<div class="container">
+    <button type="button" class="btn center">Go to Book 3</button>
+</div>
+<br>
+<br>
+<hr>
+<div>
+    <button type="button" class="btn loginbtn" onclick="window.location.href='/mainmenu'">Back to Main Menu</button>
+</div>
+<br>
+{% endblock %}
