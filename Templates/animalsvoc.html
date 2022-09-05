@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Basic Conversation</title>
+<link href="static/css/vocabstuff.css" rel="stylesheet">
+
+{% endblock %}
+
+{% block body %}
+<div>
+    <br>
+    <h1 style="text-align: center">Animals</h1>
+    <hr>
+    <div>
+        <h3 style="text-align: center;">Domestic Animals</h3>
+        <hr>
+        <br>
+        <div>
+            <label for="bonjourpronounciation" style='display:inline'>Un chien = A dog</label>
+            <button style='float:right; display: inline;'>Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>Un chat = A cat</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>Un lapin = A rabbit</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>Une tortue = A tortoise</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>Un hamster = A hamster</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>Un poisson rouge = A red fish</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>Une souris = A mouse</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>Un canari = A canary</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+        <div>
+            <label style='display:inline'>Un perroquet = A parrot</label>
+            <button style='float:right' class="btn">Hear Pronounciation</button>
+        </div>
+        <br>
+    </div>
+        <br>
+        <hr>
+        <button type="button" class="btn loginbtn" onclick="window.location.href='/vocabmenu'">Back to Vocab Menu</button>
+        <hr>
+    </div>
+</div>
+{% endblock %}

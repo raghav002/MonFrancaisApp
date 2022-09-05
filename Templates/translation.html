@@ -2,24 +2,50 @@
 
 {% block head %}
 <title>Translation</title>
+<link href="static/css/translation.css" rel="stylesheet">
 {% endblock %}
 
 {% block body %}
+<style>
+    .container {
+        position: relative;
+    }
+
+    .center {
+        margin: 0;
+        position: relative;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>
 <br>
 <h1 style="text-align: center;">Text Translation</h1>
 <hr>
-    <form action="/translation" method="POST">
-        <br>
-        <label for="etext">English Text:</label>
-        <br>
-        <textarea class="form-control" name="etext" id="etext" rows="3" placeholder = "Enter text">{{value1}}</textarea> 
-        <br>
-        <label for="ttext">French Text:</label>
-        <br>
-        <textarea class="form-control" name="ttext" id="ttext" rows="3" placeholder = "Translation">{{value}}</textarea> 
-        <br>
-        <input type="submit" value="Translate"> 
-    </form>
-<br>
-<button type="button" class="btn loginbtn" onclick="window.location.href='/mainmenu'">Back to Main Menu</button>
+<div class="grid-container">
+    <div class="grid-item center">
+        <form action="/translation" method="POST">
+            <br>
+            <label for="etext">English Text:</label>
+            <br>
+            <br>
+            <textarea placeholder="Enter the text you want to translate" class="form-control" name="etext" id="etext"
+                rows="3" placeholder="Enter text">{{value1}}</textarea>
+            <br>
+            <label for="ttext">French Text:</label>
+            <br>
+            <br>
+            <textarea placeholder="Translated text will be shown here" class="form-control" name="ttext" id="ttext" rows="3"
+                placeholder="Translation">{{value}}</textarea>
+            <br>
+            <br>
+            <input type="submit" value="Translate">
+        </form>
+    </div>
+    <br>
+    <div class="grid-item center">
+        <button type="button" class="btn loginbtn" onclick="window.location.href='/mainmenu'">Back to Main Menu</button>
+    </div>
+</div>
 {% endblock %}

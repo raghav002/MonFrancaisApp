@@ -7,3 +7,7 @@
     float: left;
     width: 50%;
 }
+
+label {
+    font-size: 24px;
+}

@@ -186,7 +186,19 @@ def bonnenuit():
     #playsound('BonneNuitP.mp3')
     #return redirect('/bconv')
 
-#Section 5.B - Environment Vocab Menu and Functions
+#Section 5.B - Animals Vocab Menu and Functions
+
+@frenchapp.route('/animalsvoc')
+@login_required
+def animalsvocpg():
+    return render_template('animalsvoc.html')
+
+#Section 5.C - Colours Vocab Menu and Functions
+
+@frenchapp.route('/coloursvoc')
+@login_required
+def coloursvocpg():
+    return render_template('coloursvoc.html')
 
 #Section 6 - Books Menu 
 
