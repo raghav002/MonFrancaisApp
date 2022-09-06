@@ -1,0 +1,54 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Vocab Menu</title>
+{% endblock %}
+
+{% block body %}
+<style>
+
+.container{
+    height: 50px;
+    position: relative;
+}
+
+.center {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+</style>
+<br>
+<h1 style="text-align: center;">Wordmatch Menu</h1>
+<hr>
+<h2 style="text-align:center;">Basic Conversation 1 - Greetings</h2>
+<br>
+<div class="container">
+    <div class="center">
+        <button type="button" class="btn loginbtn" onclick="window.location.href='/bconv1wmpg'">Start</button>
+    </div>
+</div>
+<br>
+<h2 style="text-align: center;">Animals 1 - Domestic Animals </h2>
+<br>
+<div class="container">
+    <div class="center">
+        <button type="button" class="btn loginbtn" onclick="window.location.href='/animalsvoc'">Start</button>
+    </div>
+</div>
+<br>
+<h2 style="text-align: center;"> Colours 1 - Common Colours</h2>
+<br>
+<div class="container">
+    <div class="center">
+        <button type="button" class="btn loginbtn" onclick="window.location.href='/coloursvoc'">Start</button>
+    </div>
+</div>
+<br>
+<br>
+<br>
+<button type="button" class="btn loginbtn" onclick="window.location.href='/mainmenu'">Back to Main Menu</button>
+{% endblock %}

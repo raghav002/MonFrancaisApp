@@ -209,11 +209,15 @@ def booksmenupage():
 
 #Section 7 - Wordmatch Quiz 
 
-@frenchapp.route('/wordmatch')
+@frenchapp.route('/wordmatchmenu')
 @login_required
 def wordmatchpage():
-    return render_template('wordmatch.html')
+    return render_template('wordmatchmenu.html')
 
+@frenchapp.route('/bconv1wmpg')
+@login_required
+def bconv1wmpg():
+    return render_template('bconv1wmpg.html')
 
 #Section 8.A - Picture GUess Game 
 
