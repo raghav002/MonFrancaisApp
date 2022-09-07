@@ -219,6 +219,11 @@ def wordmatchpage():
 def bconv1wmpg():
     return render_template('bconv1wmpg.html')
 
+@frenchapp.route('/animals1wmpg')
+@login_required
+def animals1wmpg():
+    return render_template('animals1wmpg.html')
+
 #Section 8.A - Picture GUess Game 
 
 @frenchapp.route('/picguess')

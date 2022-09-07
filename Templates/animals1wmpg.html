@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<link href="static/css/wordmatchpg.css" rel="stylesheet">
+<title>Wordmatch Game</title>
+{% endblock %}
+
+
+{% block body %}
+<style>
+    .container {
+        height: 50px;
+        position: relative;
+    }
+
+    .center {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+</style>
+<br>
+<h1 style="text-align: center;">Wordmatch</h1>
+<hr>
+<div id="startpg">
+    <div>
+        <p>
+            You will be shown a series of questions asking about the french translation for english phrases. If you get the answer right, your answer will change to green. If you get it wrong, it will change to red. Try your best!
+        </p>
+    </div>
+    <div class="container">
+        <div class="center">
+            <button id='startbtn'>Start Quiz</button>
+        </div>
+    </div>
+</div>
+<div id='quizpage'>
+        <p id='queslabel'>Question</p>
+        <br>
+        <div class='grid-container'>
+            <div class='grid-item'>
+                <button id='button1'>Answer 1</button>
+            </div>
+            <div class='grid-item'>
+                <button id='button2'>Answer 2</button>
+            </div>
+            <div class='grid-item'>
+                <button id='button3'>Answer 3</button>
+            </div>
+            <div class='grid-item'>
+                <button id='button4'>Answer 4</button>
+            </div>
+        </div>
+        <br>
+        <br>
+        <button id='nextbtn'>Next Question</button>
+</div>
+<div id='scorepage'>
+    <h1 style="text-align: center;">Your score:</h1>
+    <h2 style="text-align: center" id='score'>Score</h2>
+    <div>
+        <br>
+        <h3 style="text-align: center" id='message'>Message</h3>
+    </div>
+</div>
+<script type='module' src="..\static\js\animals1wm.mjs"></script>
+<br>
+<hr>
+<div>
+    <button type="button" class="btn loginbtn" onclick="window.location.href='/wordmatchmenu'">Back to Wordmatch Menu</button>
+</div>
+
+{% endblock %}
