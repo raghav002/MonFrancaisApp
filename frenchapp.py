@@ -43,7 +43,7 @@ db.create_all()
 
 @frenchapp.route('/')
 def home():
-    return render_template('home.html')
+    return render_template('index.html')
 
 #Section 2.B - Registration page + availability checks 
 
