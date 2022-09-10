@@ -1,2 +1,2 @@
-heroku web: gunicorn ---workers=2 MonFrancaisApp:frenchapp.py
+web: gunicorn frenchapp:app
 heroku ps:scale web=1
