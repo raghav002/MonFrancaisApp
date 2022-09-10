@@ -1,2 +1,2 @@
-heroku web:gunicorn frenchapp:app
+web:gunicorn frenchapp:app
 heroku ps:scale web=1
