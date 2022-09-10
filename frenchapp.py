@@ -224,6 +224,11 @@ def bconv1wmpg():
 def animals1wmpg():
     return render_template('animals1wmpg.html')
 
+@frenchapp.route('/colours1wmpg')
+@login_required
+def colours1wmpg():
+    return render_template('colours1wmpg.html')
+
 #Section 8.A - Picture GUess Game 
 
 @frenchapp.route('/picguess')
