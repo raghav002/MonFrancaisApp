@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Furniture</title>
+<link href="static/css/vocabstuff.css" rel="stylesheet">
+
+{% endblock %}
+
+{% block body %}
+<div>
+    <br>
+    <h1 style="text-align: center">Furniture</h1>
+    <hr>
+    <div>
+        <h3 style="text-align: center;">Living Room Furniture</h3>
+        <hr>
+        <br>
+        <div>
+            <label for="bonjourpronounciation" style='display:inline'>A desk = Un bureau</label>
+            <button style='float:right; display: inline;'>Hear Pronounciation</button>
+        </div>
+        <br>
+    </div>
+        <br>
+        <hr>
+        <button type="button" class="btn loginbtn" onclick="window.location.href='/vocabmenu'">Back to Vocab Menu</button>
+        <hr>
+    </div>
+</div>
+{% endblock %}

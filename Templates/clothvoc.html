@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block head %}
+<title>Clothing</title>
+<link href="static/css/vocabstuff.css" rel="stylesheet">
+
+{% endblock %}
+
+{% block body %}
+<div>
+    <br>
+    <h1 style="text-align: center">Clothing</h1>
+    <hr>
+    <div>
+        <h3 style="text-align: center;">Common Clothes</h3>
+        <hr>
+        <br>
+        <div>
+            <label for="bonjourpronounciation" style='display:inline'>A pair of pants = Une paire de pantalons</label>
+            <button style='float:right; display: inline;'>Hear Pronounciation</button>
+        </div>
+        <br>
+    </div>
+        <br>
+        <hr>
+        <button type="button" class="btn loginbtn" onclick="window.location.href='/vocabmenu'">Back to Vocab Menu</button>
+        <hr>
+    </div>
+</div>
+{% endblock %}

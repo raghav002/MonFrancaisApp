@@ -201,6 +201,21 @@ def animalsvocpg():
 def coloursvocpg():
     return render_template('coloursvoc.html')
 
+
+#Section 5.D - Clothing Vocab Menu and Functions
+
+@frenchapp.route('/clothvoc')
+@login_required
+def clothvocpg():
+    return render_template('clothvoc.html')
+
+#Section 5.E - Furniture Vocab Menu and Functions
+
+@frenchapp.route('/furnvoc')
+@login_required
+def furnvocpg():
+    return render_template('furnvoc.html')
+
 #Section 6 - Books Menu 
 
 @frenchapp.route('/booksmenu')
