@@ -1,54 +1,105 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<title>Vocab Menu</title>
+<link rel="stylesheet" href="../static/css/wordmatchmenu.css">
 {% endblock %}
 
 {% block body %}
-<style>
+<div class="header">
+    <h1>Wordmatch Menu</h1>
+</div>
+<div class="selecttopic">
+    <h2>Select Topic</h2>
+</div>
+<div class="topicchosen">
+    <img id="topicimg">
+    <h2 id="topicph">Topic</h2>
+    <!--<h2>{{topic}}</hr> Either use Jinja or InnerHTML to change
+        this-->
+</div>
+<div class="side-nav">
+    <a id="bconvcho">Basic Conversation</a>
+    <a id="animcho">Animals</a>
+    <a id="colcho">Colours</a>
+    <a id="clocho">Clothes</a>
+    <a id="furncho">Furniture</a>
+    <a id="mainmenu" href="/mainmenu">Return to Main Menu</a>
+</div>
 
-.container{
-    height: 50px;
-    position: relative;
-}
+<div id="defaultsec" class="defaulttext">
+    <br>
+    <label>Choose any of the topics given on the left to see all available quizzes
+    </label>
+</div>
+<div id="bconv" class="bconv">
+    <div class="grid-container">
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/bconv1wmpg'">Introductions</button>
+        </div>
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/bconv2wmpg'">Sub-topic 2</button>
+        </div>
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/bconv3wmpg'">Sub-topic 3</button>
+        </div>
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/bconv4wmpg'">Sub-topic 4</button>
+        </div>
+    </div>
+</div>
 
-.center {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-  }
-</style>
-<br>
-<h1 style="text-align: center;">Wordmatch Menu</h1>
-<hr>
-<h2 style="text-align:center;">Basic Conversation 1 - Greetings</h2>
-<br>
-<div class="container">
-    <div class="center">
-        <button type="button" class="btn loginbtn" onclick="window.location.href='/bconv1wmpg'">Start</button>
+
+<div id="anim" class="anim">
+    <div class="grid-container">
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/animals1wmpg'">Domestic
+                Animals</button>
+        </div>
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/animals2wmpg'">Sub-topic 2</button>
+        </div>
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/animals3wmpg'">Sub-topic 3</button>
+        </div>
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/animals4wmpg'">Sub-topic 4</button>
+        </div>
     </div>
 </div>
-<br>
-<h2 style="text-align: center;">Animals 1 - Domestic Animals </h2>
-<br>
-<div class="container">
-    <div class="center">
-        <button type="button" class="btn loginbtn" onclick="window.location.href='/animals1wmpg'">Start</button>
+
+<div id="col" class="col">
+    <div class="grid-container">
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/colours1wmpg'">Common
+                Colours</button>
+        </div>
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/colours2wmpg'">Sub-topic 2</button>
+        </div>
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/colours3wmpg'">Sub-topic 3</button>
+        </div>
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/colours4wmpg'">Sub-topic 4</button>
+        </div>
     </div>
 </div>
-<br>
-<h2 style="text-align: center;"> Colours 1 - Common Colours</h2>
-<br>
-<div class="container">
-    <div class="center">
-        <button type="button" class="btn loginbtn" onclick="window.location.href='/colours1wmpg'">Start</button>
+
+<div id="clo" class="clo">
+    <div class="grid-container">
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/clothes1wmpg'">Casual
+                Clothes</button>
+        </div>
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/clothes2wmpg'">Sub-topic 2</button>
+        </div>
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/clothes3wmpg'">Sub-topic 3</button>
+        </div>
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/clothes4wmpg'">Sub-topic 4</button>
+        </div>
     </div>
 </div>
-<br>
-<br>
-<br>
-<button type="button" class="btn loginbtn" onclick="window.location.href='/mainmenu'">Back to Main Menu</button>
+
+<div id="furn" class="furn">
+    <div class="grid-container">
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/furn1wmpg'">Bedroom
+                Furniture</button>
+        </div>
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/furn2wmpg'">Sub-topic 2</button>
+        </div>
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/furn3wmpg'">Sub-topic 3</button>
+        </div>
+        <div><button class="sbtpcho" type="button" onclick="window.location.href='/furn4wmpg'">Sub-topic 4</button>
+        </div>
+    </div>
+</div>
+
+<script src="../static/js/wmmenufunc.mjs"></script>
 {% endblock %}
