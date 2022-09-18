@@ -163,6 +163,7 @@ function checkans1(){
             
         }  
     } 
+    button1.disabled= true;
     button2.disabled = true;
     button3.disabled = true;
     button4.disabled= true;
@@ -182,7 +183,8 @@ function checkans2(){
             
         }
     }
-    button1.disabled = true;
+    button1.disabled= true;
+    button2.disabled = true;
     button3.disabled = true;
     button4.disabled= true;
 }
@@ -201,8 +203,9 @@ function checkans3(){
             
         }
     }
-    button1.disabled = true;
+    button1.disabled= true;
     button2.disabled = true;
+    button3.disabled = true;
     button4.disabled= true;
 }
 function checkans4(){
@@ -220,7 +223,8 @@ function checkans4(){
             
         }
     }
-    button1.disabled = true;
+    button1.disabled= true;
     button2.disabled = true;
-    button3.disabled= true;
+    button3.disabled = true;
+    button4.disabled= true;
 }

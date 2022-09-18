@@ -1,0 +1,17 @@
+h1 {
+    height: 70px;
+    text-align: center;
+    padding: 9px;
+    border-radius: 12px;
+}
+
+h2 {
+    border-radius: 12px;
+    width: 250px;
+    height: 45px;
+    text-align: center;
+}
+
+.menustyle {
+    background-color: #274690;
+}

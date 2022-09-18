@@ -163,6 +163,7 @@ function checkans1(){
             
         }  
     } 
+    button1.disabled= true;
     button2.disabled = true;
     button3.disabled = true;
     button4.disabled= true;
@@ -182,6 +183,7 @@ function checkans2(){
             
         }
     }
+    button2.disabled= true;
     button1.disabled = true;
     button3.disabled = true;
     button4.disabled= true;
@@ -201,6 +203,7 @@ function checkans3(){
             
         }
     }
+    button3.disabled= true;
     button1.disabled = true;
     button2.disabled = true;
     button4.disabled= true;
@@ -220,6 +223,7 @@ function checkans4(){
             
         }
     }
+    button4.disabled= true;
     button1.disabled = true;
     button2.disabled = true;
     button3.disabled= true;
