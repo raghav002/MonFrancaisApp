@@ -12,6 +12,32 @@ h2 {
     text-align: center;
 }
 
+.mmcont{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    overflow-y: scroll;
+    width: 100vw;
+    height: 100vh;
+}
+
 .menustyle {
     background-color: #274690;
+    position: relative;
+    width: 50%;
+    height: 100%;
+    left: 22.5%;
+    display: grid;
+    grid-template-rows: repeat(11, 5%);
+    row-gap: 5%;
+    align-items: center;
+    justify-items: center;
+    padding: 2.5%;
+    border-radius: 12px;
+}
+
+.ctr {
+    position: relative;
+    width: 10%;
+    left: 45%;
 }

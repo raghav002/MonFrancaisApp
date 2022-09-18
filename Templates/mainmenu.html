@@ -1,64 +1,40 @@
 {% extends 'base.html' %}
 
 {% block head %}
-<title>Main Menu</title>
 <link rel="stylesheet" href="../static/css/mainmenu.css">
 {% endblock %}
 
 {% block body %}
-<br>
-<h1>Main Menu</h1>
-<br>
-<div class="menustyle">
-    <div class="container">
-        <h2 class="center">Translate</h2>
-    </div>
+<div class="mmcont">
+    <title>Main Menu</title>
     <br>
-    <div class="container">
-        <button class="btn center" type="button" onclick="window.location.href='/translation'">Go to Translator</button>
-    </div>
+    <h1>Main Menu</h1>
     <br>
 
-    <div class="container">
-        <h2 class="center">Vocabulary</h2>
-    </div>
-    <br>
-    <div class="container">
-        <button class="btn center" type="button" onclick="window.location.href='/vocabmenu'">Go to Vocabulary</button>
-    </div>
-    <br>
+    <div class="menustyle">
+        <h2>Translate</h2>
+        <button type="button" onclick="window.location.href='/translation'">Go to Translator</button>
 
-    <div class="container">
-        <h2 class="center">Wordmatch</h2>
-    </div>
-    <br>
-    <div class="container">
-        <button class="btn center" type="button" onclick="window.location.href='/wordmatchmenu'">Go to
+        <h2>Vocabulary</h2>
+        <button type="button" onclick="window.location.href='/vocabmenu'">Go to Vocabulary</button>
+
+        <h2>Wordmatch</h2>
+        <button type="button" onclick="window.location.href='/wordmatchmenu'">Go to
             Wordmatch</button>
-    </div>
-    <br>
 
-    <div class="container">
-        <h2 class="center">Picture Guess</h2>
-    </div>
-    <br>
-    <div class="container">
-        <button class="btn center" type="button" onclick="window.location.href='/picguess'">Go to Picture Guess</button>
-    </div>
-    <br>
+        <h2>Picture Guess</h2>
+        <button type="button" onclick="window.location.href='/picguess'">Go to Picture Guess</button>
 
-    <div class="container">
-        <h2 class="center">Books</h2>
+        <h2>Books</h2>
+        <button type="button" onclick="window.location.href='/booksmenu'">Go to Books</button>
     </div>
+
+
     <br>
-    <div class="container">
-        <button class="btn center" type="button" onclick="window.location.href='/booksmenu'">Go to Books</button>
-    </div>
+    <br>
+    <button class="ctr" type="button" onclick="window.location.href='/logout'">Logout</button>
     <br>
     <br>
 
-    <hr>
-    <button class="btn" type="button" onclick="window.location.href='/logout'">Logout</button>
-    <hr>
 </div>
 {% endblock %}
