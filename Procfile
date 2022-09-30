@@ -1,1 +1,1 @@
-web: gunicorn  frenchapp.wsgi --log-file -
+web: gunicorn frenchapp:frenchapp --preload -b 0.0.0.0:5000
