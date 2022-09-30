@@ -122,6 +122,7 @@ def loginpage():
                 flash('Incorrect password')
                 return redirect('/login')
             userinfonum = userinfonum + 1
+            return user_email   
 
         if not user_email or not user_name or not user_password:
             flash('No details entered')
