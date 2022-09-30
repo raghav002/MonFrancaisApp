@@ -185,22 +185,15 @@ def bconvpage():
 @frenchapp.route('/bconv/bonjour')
 @login_required
 def bonjouraudio():
-    text = "Hello"
-    translator = Translator()
-    translated = translator.translate(text, dest="fr")
-    translatedtext = translated.text
-    speak = gtts.gTTS(text=translatedtext, lang="fr", slow=False)
-    speak.save("hello.mp3")
-    playsound("hello.mp3")
+    playsound("bconvaudio/hello.mp3")
     return redirect('/bconv')
 
 
 @frenchapp.route('/bconv/bonsoir')
 @login_required
 def bonsoirpage():
-    print('bonsoirpro')
-    # playsound('BonsoirP.mp3')
-    # return redirect('/bconv')
+    playsound("bconvaudio/Good evening.mp3")
+    return redirect('/bconv')
 
 
 @frenchapp.route('/bconv/bonnenuit')
