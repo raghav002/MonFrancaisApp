@@ -12,7 +12,7 @@ from flask_login import UserMixin, login_user, login_remembered, LoginManager, l
 
 # Section 1 - Database Model Construction
 
-frenchapp = Flask(__name__, template_folder='template', static_folder='../static')
+frenchapp = Flask(__name__, template_folder='../template', static_folder='../static')
 
 frenchapp.config.from_object(__name__)
 frenchapp.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///suppfiles.db'
@@ -47,7 +47,7 @@ db.create_all()
 
 @frenchapp.route('/')
 def home():
-    return render_template('index.html')
+    return render_template('templates/index.html')
 
 # Section 2.B - Registration page + availability checks
 
