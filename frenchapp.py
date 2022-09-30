@@ -13,7 +13,7 @@ from flask_login import UserMixin, login_user, login_remembered, LoginManager, l
 # Section 1 - Database Model Construction
 
 frenchapp = Flask(__name__, template_folder='templates', static_folder='static')
-
+frenchapp.secret_key = 'secret_secret_key'
 frenchapp.config.from_object(__name__)
 frenchapp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 frenchapp.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///suppfiles.db'
@@ -282,5 +282,5 @@ def picguesspage():
 
 
 if __name__ == "__main__":
-    frenchapp.secret_key = 'secret_secret_key'
+    
     frenchapp.run(debug=True)
