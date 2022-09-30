@@ -125,7 +125,7 @@ def loginpage():
         if not user_email or not user_name or not user_password:
             flash('No details entered')
             return redirect('/login')      
-        return 'done'; 
+        return redirect('/mainmenu')
     else:
         return render_template('login.html')
     
