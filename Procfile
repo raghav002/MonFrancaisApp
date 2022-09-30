@@ -1,1 +1,1 @@
-web: gunicorn app:frenchapp
+web: gunicorn run:frenchapp
