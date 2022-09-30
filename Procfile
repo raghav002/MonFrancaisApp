@@ -1,1 +1,1 @@
-web: gunicorn frenchapp:frenchapp
+web: gunicorn  frenchapp.wsgi --log-file -
