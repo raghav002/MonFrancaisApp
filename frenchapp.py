@@ -112,19 +112,20 @@ def loginpage():
                 if user:
                     login_user(user, remember=True)
                     return redirect('/mainmenu')
+            
+            #elif user_email == UserInfo.query.all()[userinfonum].useremail and \
+             #       user_name == UserInfo.query.all()[userinfonum].username and \
+              #      user_password != UserInfo.query.all()[userinfonum].password:
+               # flash('Incorrect password')
+                #return redirect('/login')
+            #userinfonum = userinfonum + 1
 
-            elif user_email == UserInfo.query.all()[userinfonum].useremail and \
-                    user_name == UserInfo.query.all()[userinfonum].username and \
-                    user_password != UserInfo.query.all()[userinfonum].password:
-                flash('Incorrect password')
-                return redirect('/login')
-            userinfonum = userinfonum + 1
-
-        if not user_email or not user_name or not user_password:
-            flash('No details entered')
-            return redirect('/login')
+        #if not user_email or not user_name or not user_password:
+         #   flash('No details entered')
+          #  return redirect('/login')      
     else:
         return render_template('login.html')
+    
 
 # Section 3 - Main Menu
 
