@@ -6,8 +6,9 @@
 {% endblock %}
 
 {% block body %}
-<h1 style="text-align: center;">Wordmatch</h1>
+
 <div id="startpg" class="startpg">
+    <h1 style="text-align: center;">Wordmatch</h1>
     <div>
         <p>
             You will be shown a series of questions asking about the french translation for english phrases. If you get
@@ -42,10 +43,9 @@
         </div>
     </div>
     <button class="nextbtn" id='nextbtn'>Next Question</button>
-    <div>
-        <button type="button" class="backbtn" onclick="window.location.href='/wordmatchmenu'">Back to Wordmatch
-            Menu</button>
-    </div>
+    <button type="button" class="backbtn" onclick="window.location.href='/wordmatchmenu'">Back to Wordmatch
+        Menu</button>
+    
 </div>
 <div id='scorepage'>
     <h1 style="text-align: center;">Your score:</h1>

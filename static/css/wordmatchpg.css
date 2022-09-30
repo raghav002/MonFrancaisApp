@@ -5,7 +5,11 @@ p {
 
 .quizpage {
     position: fixed;
-    top: 10%;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-y: scroll;
 }
 
 .anscho {
@@ -14,8 +18,8 @@ p {
 }
 
 .queslabel {
-    position: fixed;
-    height: 7%;
+    position: relative;
+    height: 9%;
     width: 70%;
     left: 16%;
     border: 2px solid;
@@ -27,8 +31,7 @@ p {
 }
 
 .grid-container {
-    position: fixed;
-    top: 30%;
+    position: relative;
     left: 25%;
     width: 50%;
     height: 50%;
@@ -43,17 +46,17 @@ p {
 }
 
 .nextbtn {
-    position: fixed;
-    top: 82%;
+    position: relative;
+    top: 8%;
     left: 42.5%;
-    height: 6%;
+    height: 8%;
     width: 15%;
 }
 
 .backbtn {
-    position: fixed;
-    top: 88%;
+    position: relative;
+    top: 90%;
     left: 71%;
-    height: 9%;
+    height: 14%;
     width: 15%;
 }
