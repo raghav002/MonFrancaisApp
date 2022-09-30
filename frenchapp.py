@@ -12,7 +12,7 @@ from flask_login import UserMixin, login_user, login_remembered, LoginManager, l
 
 # Section 1 - Database Model Construction
 
-frenchapp = Flask(__name__, template_folder='../template', static_folder='../static')
+frenchapp = Flask(__name__, template_folder='templates', static_folder='static')
 
 frenchapp.config.from_object(__name__)
 frenchapp.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///suppfiles.db'
