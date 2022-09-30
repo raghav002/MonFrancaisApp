@@ -115,14 +115,14 @@ def loginpage():
                     login_user(user, remember=True)
                     print('worked')
                     return redirect('/mainmenu')
-            
+                return user_email
             elif user_email == UserInfo.query.all()[userinfonum].useremail and \
                     user_name == UserInfo.query.all()[userinfonum].username and \
                     user_password != UserInfo.query.all()[userinfonum].password:
                 flash('Incorrect password')
                 return redirect('/login')
             userinfonum = userinfonum + 1
-            return user_email   
+               
 
         if not user_email or not user_name or not user_password:
             flash('No details entered')
