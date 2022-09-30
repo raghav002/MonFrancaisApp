@@ -1,1 +1,1 @@
-web: gunicorn frenchapp:app
+web: gunicorn app:app
