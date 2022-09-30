@@ -15,6 +15,7 @@ from flask_login import UserMixin, login_user, login_remembered, LoginManager, l
 frenchapp = Flask(__name__, template_folder='templates', static_folder='static')
 
 frenchapp.config.from_object(__name__)
+frenchapp.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = True
 frenchapp.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///suppfiles.db'
 frenchapp.config.update(SESSION_COOKIE_SAMESITE="None",
                         SESSION_COOKIE_SECURE=True)
