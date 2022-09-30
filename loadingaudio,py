@@ -1,0 +1,19 @@
+import gtts
+import playsound
+import googletrans
+
+entrytype = int(input('Enter process desired'))
+if entrytype == 1:
+    text = str(input("Enter required translation"))
+    translator = googletrans.Translator()
+    translated = translator.translate(text, dest="fr")
+    translatedtext = translated.text
+    speak = gtts.gTTS(text=translatedtext, lang="fr", slow=False)
+    speak.save(text + ".mp3")
+    playsound.playsound(text + ".mp3")
+else:
+    text = str(input("Enter Frenchform"))
+    speak = gtts.gTTS(text=text, lang="fr", slow="False")
+    entext=str(input("Enter Engform"))
+    speak.save(entext + ".mp3")
+    playsound.playsound(entext + ".mp3")
