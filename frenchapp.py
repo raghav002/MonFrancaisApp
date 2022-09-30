@@ -102,6 +102,7 @@ def loginpage():
         user_password = request.form['password']
         userinfonum = 0
         while userinfonum < UserInfo.query.count():
+            print('terated')
             # check for cases where 1 is right, 2 are wrong
             # 2 are right, 1 is wrong
             # 3 are right or 3 are wrong
@@ -125,7 +126,6 @@ def loginpage():
         if not user_email or not user_name or not user_password:
             flash('No details entered')
             return redirect('/login')      
-        
     else:
         return render_template('login.html')
     
