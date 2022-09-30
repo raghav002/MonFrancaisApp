@@ -9,7 +9,6 @@ from flask_sqlalchemy import SQLAlchemy
 from googletrans import Translator
 from playsound import playsound
 from flask_login import UserMixin, login_user, login_remembered, LoginManager, login_required, logout_user, current_user
-import gtts
 
 # Section 1 - Database Model Construction
 
