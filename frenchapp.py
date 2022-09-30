@@ -112,6 +112,7 @@ def loginpage():
                 user = UserInfo.query.filter_by(useremail=user_email).first()
                 if user:
                     login_user(user, remember=True)
+                    flash('details entered')
                     return redirect('/mainmenu')
             
             elif user_email == UserInfo.query.all()[userinfonum].useremail and \
