@@ -17,7 +17,16 @@
         <br>
         <div>
             <label for="bonjourpronounciation" style='display:inline'>Bonjour! = Hello! / Good morning!</label>
-            <button style='float:right; display: inline;' class="btn" onclick="window.location.href='/bconv/bonjour'">Hear Pronounciation</button>
+            <button style='float:right; display: inline;' class="btn" onclick="playpro()">Hear Pronounciation</button>
+            <!--Need to figure out how to get these files to play since JS apparently can't use local files-->
+            <audio id="bonjour1" src="https://drive.google.com/file/d/1poIGlLdMINE7QwOqwGkg0-fhRMByQfN7/view?usp=sharing"></audio>
+            <script>
+                function playpro() {
+                    pron=document.getElementById('bonjour1')
+                    pronpla=new Audio(pron)
+                    pronpla.play()
+                }
+            </script>
         </div>
         <br>
         <div>
@@ -111,5 +120,6 @@
         <button type="button" class="btn loginbtn" onclick="window.location.href='/vocabmenu'">Back to Vocab Menu</button>
         <hr>
     </div>
+    
 </div>
 {% endblock %}

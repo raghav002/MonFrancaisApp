@@ -16,8 +16,15 @@
         <hr>
         <br>
         <div>
-            <label for="bonjourpronounciation" style='display:inline'>Un chien = A dog</label>
-            <button style='float:right; display: inline;'>Hear Pronounciation</button>
+            <label style='display:inline'>Un chien = A dog</label>
+            <button style='float:right; display: inline;' onclick="playpro()">Hear Pronounciation</button>
+            <script>
+                function playpro(){
+                    var pronounciation = new Audio('bconvaudio\hello.mp3');
+                    pronounciation.play();
+                    pronounciation.loop =false;
+                }
+            </script>
         </div>
         <br>
         <div>
