@@ -115,12 +115,45 @@ def loginpage():
                     login_user(user, remember=True)
                     print('worked')
                     return redirect('/mainmenu')
-                return user_email
+
             elif user_email == UserInfo.query.all()[userinfonum].useremail and \
                     user_name == UserInfo.query.all()[userinfonum].username and \
                     user_password != UserInfo.query.all()[userinfonum].password:
                 flash('Incorrect password')
                 return redirect('/login')
+            elif user_email == UserInfo.query.all()[userinfonum].useremail and \
+                    user_name != UserInfo.query.all()[userinfonum].username and \
+                    user_password == UserInfo.query.all()[userinfonum].password:
+                flash('Incorrect username')
+                return redirect('/login')
+            elif user_email != UserInfo.query.all()[userinfonum].useremail and \
+                    user_name == UserInfo.query.all()[userinfonum].username and \
+                    user_password == UserInfo.query.all()[userinfonum].password:
+                flash('Incorrect email')
+                return redirect('/login')
+
+            elif user_email == UserInfo.query.all()[userinfonum].useremail and \
+                    user_name != UserInfo.query.all()[userinfonum].username and \
+                    user_password != UserInfo.query.all()[userinfonum].password:
+                flash('Invalid username and password')
+                return redirect('/login')
+            elif user_email != UserInfo.query.all()[userinfonum].useremail and \
+                    user_name == UserInfo.query.all()[userinfonum].username and \
+                    user_password != UserInfo.query.all()[userinfonum].password:
+                flash('Invalid email and password')
+                return redirect('/login')
+            elif user_email != UserInfo.query.all()[userinfonum].useremail and \
+                    user_name != UserInfo.query.all()[userinfonum].username and \
+                    user_password == UserInfo.query.all()[userinfonum].password:
+                flash('Invalid email and password')
+                return redirect('/login')
+
+            elif user_email != UserInfo.query.all()[userinfonum].useremail and \
+                    user_name != UserInfo.query.all()[userinfonum].username and \
+                    user_password != UserInfo.query.all()[userinfonum].password:
+                flash('All details entered are invalid')
+                return redirect('/login')
+            
             userinfonum = userinfonum + 1
                
 
