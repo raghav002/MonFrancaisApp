@@ -218,11 +218,11 @@ def bconvpage():
 #################################################################################################################################################################################################
 
 
-#@frenchapp.route('/bconv/bonjour')
-#@login_required
-#def bonjouraudio():
-#    playsound("bconvaudio/hello.mp3")
-#    return redirect('/bconv')
+@frenchapp.route('/bconv/bonjour')
+@login_required
+def bonjouraudio():
+    playsound("bconvaudio/hello.mp3")
+    return redirect('/bconv')
 
 
 @frenchapp.route('/bconv/bonsoir')
